@@ -8,6 +8,7 @@ export class AppComponent {
   title = 'rest-app';
 
   links = {
-    items: ['/items']
+    items: ['/items'],
+    widgets: ['/widgets']
   }
 }
