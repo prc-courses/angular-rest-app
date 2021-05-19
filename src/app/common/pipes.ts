@@ -11,7 +11,8 @@ import { Widget } from './widgets.service';
 @Pipe({name: 'filterWidgets'})
 export class FilterWidgetsPipe implements PipeTransform {
   transform(value: Widget[], filter: string): Widget[] {
-    return value ? value.filter(v => v.name.includes(filter)) : [];
+    const lfilter = filter.toLowerCase();
+    return value ? value.filter(v => v.name.toLowerCase().includes(lfilter)) : [];
   }
 }
 
