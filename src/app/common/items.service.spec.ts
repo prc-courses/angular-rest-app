@@ -3,7 +3,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { ItemsService } from './items.service';
 
-describe('ItemsiService', () => {
+describe('ItemsService', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
       imports: [HttpClientModule],
